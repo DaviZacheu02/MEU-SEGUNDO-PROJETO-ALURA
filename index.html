@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>A Mansão dos Ecos Perdidos</title>
+</head>
+<body>
+  <main>
+    <!-- Passo 0 -->
+    <div class="passo ativo" id="passo-0">
+      <h1>A Mansão dos Ecos Perdidos</h1>
+      <p>Você recebeu uma carta misteriosa pedindo que fosse a uma antiga mansão. Chegando lá, encontra uma porta trancada com um símbolo de lua crescente. O que deseja fazer?</p>
+      <button class="btn-proximo" data-proximo="1">Tentar abrir a porta</button>
+      <button class="btn-proximo" data-proximo="2">Procurar uma chave ao redor</button>
+    </div>
+
+    <!-- Passo 1 -->
+    <div class="passo" id="passo-1">
+      <p>Ao tentar abrir a porta, ela se abre sozinha com um rangido assustador. Dentro, você encontra um corredor iluminado apenas por velas.</p>
+      <button class="btn-proximo" data-proximo="3">Seguir pelo corredor</button>
+      <button class="btn-proximo" data-proximo="4">Explorar uma sala à direita</button>
+    </div>
+
+    <!-- Passo 2 -->
+    <div class="passo" id="passo-2">
+      <p>Procurando ao redor, você encontra uma chave enferrujada debaixo de uma pedra. Ela se encaixa perfeitamente na fechadura, e a porta se abre.</p>
+      <button class="btn-proximo" data-proximo="3">Seguir pelo corredor</button>
+    </div>
+
+    <!-- Passo 3 -->
+    <div class="passo" id="passo-3">
+      <p>Seguindo pelo corredor, você se depara com três caminhos: uma biblioteca escura, um salão cheio de espelhos e uma escadaria que leva ao porão.</p>
+      <button class="btn-proximo" data-proximo="5">Entrar na biblioteca</button>
+      <button class="btn-proximo" data-proximo="6">Entrar no salão de espelhos</button>
+      <button class="btn-proximo" data-proximo="7">Descer ao porão</button>
+    </div>
+
+    <!-- Passo 4 -->
+    <div class="passo" id="passo-4">
+      <p>A sala à direita parece ser um escritório antigo. Há um diário sobre a mesa, com páginas que mencionam uma entidade aprisionada na mansão.</p>
+      <button class="btn-proximo" data-proximo="3">Voltar ao corredor</button>
+    </div>
+
+    <!-- Passo 5 -->
+    <div class="passo" id="passo-5">
+      <p>Na biblioteca, você encontra livros antigos e um mapa que parece mostrar uma passagem secreta dentro da mansão.</p>
+      <button class="btn-proximo" data-proximo="8">Seguir as indicações do mapa</button>
+      <button class="btn-proximo" data-proximo="3">Voltar ao corredor</button>
+    </div>
+
+    <!-- Passo 6 -->
+    <div class="passo" id="passo-6">
+      <p>O salão de espelhos é estranho. Ao se aproximar de um deles, você vê um reflexo que não é o seu. Ele sussurra algo sobre um “coração escondido”.</p>
+      <button class="btn-proximo" data-proximo="9">Tocar no espelho</button>
+      <button class="btn-proximo" data-proximo="3">Sair do salão</button>
+    </div>
+
+    <!-- Passo 7 -->
+    <div class="passo" id="passo-7">
+      <p>Descendo ao porão, você encontra uma porta trancada com inscrições que brilham. Parece precisar de um objeto específico para ser aberta.</p>
+      <button class="btn-proximo" data-proximo="3">Voltar ao corredor</button>
+    </div>
+
+    <!-- Passo 8 -->
+    <div class="passo" id="passo-8">
+      <p>Seguindo as indicações do mapa, você encontra uma passagem secreta que leva a uma sala cheia de velas e um pedestal com um artefato brilhante.</p>
+      <button class="btn-proximo" data-proximo="10">Pegar o artefato</button>
+    </div>
+
+    <!-- Passo 9 -->
+    <div class="passo" id="passo-9">
+      <p>Ao tocar no espelho, você é transportado para uma sala escondida, onde encontra um diário explicando como libertar ou destruir a entidade aprisionada.</p>
+      <button class="btn-proximo" data-proximo="10">Decidir o que fazer</button>
+    </div>
+
+    <!-- Passo 10 -->
+    <div class="passo" id="passo-10">
+      <p>Você reúne todas as pistas e precisa decidir: libertar a entidade e enfrentar as consequências ou destruir a mansão e selar o mistério para sempre.</p>
+      <button class="btn-proximo" data-proximo="11">Libertar a entidade</button>
+      <button class="btn-proximo" data-proximo="12">Destruir a mansão</button>
+    </div>
+
+    <!-- Passo 11 -->
+    <div class="passo" id="passo-11">
+      <p>Você decide libertar a entidade. Ela te agradece, mas desaparece, deixando você preso na mansão para sempre. Fim.</p>
+      <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+    </div>
+
+    <!-- Passo 12 -->
+    <div class="passo" id="passo-12">
+      <p>Você destrói a mansão, encerrando o mistério, mas fica com a dúvida eterna sobre o que realmente estava lá. Fim.</p>
+      <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
